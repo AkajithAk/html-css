@@ -1,0 +1,40 @@
+body, h1, li{
+    margin: 0;
+}
+.header{
+    height: 60px;
+    background: rgb(11, 104, 151);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+li:hover{
+    color: black;
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    background: rgb(34, 124, 133);
+    padding: 0;
+    width: 100px;
+}
+.subMenu li{
+    padding: 10px;
+}
+.subMenu li:hover{
+    background: rgba(0, 0, 0, 0.685);
+    color: white;
+}
+li:hover > .subMenu{
+    display: block;
+}
+
